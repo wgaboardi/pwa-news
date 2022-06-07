@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useState, useCallback } from 'react';
+import { memo, useEffect, useState, useCallback } from 'react';
 import { useNavigate, useParams, Link } from 'react-router-dom';
 import { Row, Col } from 'antd'
 import Api from '../api'
@@ -64,7 +64,7 @@ const Post = () => {
       <Actions post={post} subject={subject} />
       <Row gutter={[16, 16]}>
         <Col span={24} md={16}>
-          <p>datePublished</p>
+          <p>datePublished: {datePublished}</p>
           <h1 dangerouslySetInnerHTML={createMarkup(title)} />
           {image && renderImg({ image, description })}
           <p className="text" dangerouslySetInnerHTML={createMarkup(description)}></p>

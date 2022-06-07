@@ -36,20 +36,4 @@ function App() {
   );
 }
 
-function Toolbar(props) {
-  return (
-    <div>
-      <ThemedButton />
-    </div>
-  );
-}
-
-function ThemedButton() {
-  const theme = useContext(ThemeContext);
-  return (
-    <button style={{ background: theme.background, color: theme.foreground }}>
-      Eu sou estilizado pelo tema do contexto!
-    </button>
-  );
-}
 export default App;
