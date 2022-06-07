@@ -1,4 +1,4 @@
-import react, { memo } from 'react'
+import { memo } from 'react'
 import ShareIcon from '../../images/share.svg'
 import CopyIcon from '../../images/copy.svg'
 
